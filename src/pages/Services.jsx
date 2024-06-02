@@ -59,7 +59,7 @@ const Services = () => {
             </div>
 
             <div className="w-full sm:w-1/2 mb-4 px-2 ">
-              <div className="h-full py-2 px-6 border border-green-blue border-t-0 border-l-0 rounded-br-xl">
+              <div className="h-full py-2 px-6 border border-blue-500 border-t-0 border-l-0 rounded-br-xl">
                 <h3 className="text-2xl font-bold text-md mb-2">Consulting</h3>
                 <p className="text-sm">Our consulting services offer expert guidance on implementing automation systems, optimizing operations, and achieving business goals.</p>
               </div>

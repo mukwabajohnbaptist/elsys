@@ -1,140 +1,64 @@
 import React from 'react'
 import Layout from './Layout'
+import { FaRegClock } from "react-icons/fa";
+import { MdPhoneInTalk } from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
+import ContactForm from '../components/ContactForm';
+
+
+
 
 const Contact = () => {
   return (
     <Layout>
-      <div className="relative mx-auto  p-16 md:max-w-full md:px-8 lg:py-32 xl:px-20 bg-gradient-to-tr from-cyan-900 to-blue-600">
-        {/* <img className="object-cover" src={crane} alt="" /> */}
-        <div className="mx-auto max-w-xl lg:max-w-screen-xl">
-          <div className="mx-auto flex flex-col items-center text-center lg:max-w-lg">
-            <div className="mb-6 max-w-xl">
-              <h2 className="mb-6 max-w-lg font-sans text-3xl font-black tracking-tight text-gray-200 sm:text-4xl">
-                Get in Touch
-                <span className="inline-block text-blue-600">
-                </span>
-              </h2>
-              <div>
-                <p className="mb-4 inline-block rounded-full px-3 py-px text-lg font-sans  tracking-wider text-cyan-100">
-                  Connect with our customer service
-                </p>
+      <div className='mb-20'>
+        <div className="container flex flex-col mx-auto ">
+          <div className="w-full draggable">
+            <div className="container flex flex-col items-center gap-4 mx-auto my-32">
+              <p className="text-2xl font-extrabold text-dark-grey-900">Get in touch with us today</p>
+              <p className="text-base leading-7 text-dark-grey-600">Connect with our customer service team</p>
+              <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                <div className="flex flex-col items-center gap-3 px-8 py-10 rounded-3xl shadow-main">
+                  <span className='text-gray-200 text-3xl'>
+                  <MdLocationOn />
+                  </span>
+                  <p className="text-2xl font-bold text-dark-grey-900">Our Address</p>
+                  <p className="text-base leading-7 text-dark-grey-600">Suna Road, Kampala (U)
+                    <br />
+                    P.O.Box 109692 Kampala GPO</p>
+                </div>
+                <div className="flex flex-col items-center gap-1 px-8 py-10  rounded-3xl shadow-main">
+                  <span className='text-gray-200 text-3xl'>
+                  <MdPhoneInTalk />
+                  </span>
+                  <p className="text-2xl font-bold text-dark-grey-900">Contact Us</p>
+                  <p className="text-base leading-7 text-dark-grey-600">Reach out to us by phone</p>
+                  <div className='flex'>
+                    <a className="text-base leading-7 text-dark-grey-600" href="tel:+256 (775) 644-693">+256 (775) 644-693</a>
+                    <span> &nbsp;|&nbsp; </span>
+                    <a className="text-base leading-7 text-dark-grey-600" href="tel:+256 (788) 247-204">+256 (788) 247-204</a>
+                  </div>
+                  <p>
+                    Email:
+                    <a className="text-base leading-7 text-dark-grey-600" href="mailto:info@el-sysce.com">info@el-sysce.com</a>
+                  </p>
+                </div>
+                <div className="flex flex-col items-center gap-3 px-1 py-10 rounded-3xl shadow-main">
+                  <span className='text-gray-200 text-3xl'>
+                  <FaRegClock />
+                  </span>
+                  <p className="text-2xl font-bold text-dark-grey-900">Working hours</p>
+                  <p className="text-base leading-7 text-dark-grey-600">Monday - Friday: 08:00 - 17:00</p>
+                  <p className="text-base leading-7 text-dark-grey-600">Saturday & Sunday: 08:00 - 12:00</p>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
 
-            </div>
-            {/* <div className="flex items-center">
-                            <a href="/Contact" className="mr-6 inline-flex h-12 items-center justify-center rounded bg-blue-600 px-6 font-medium tracking-wide text-white shadow-md outline-none transition duration-200 hover:bg-blue-700 focus:ring"> Explore now </a>
-                        </div> */}
-          </div>
-        </div>
+        <ContactForm />
       </div>
-      <section className="bg-blue-50 dark:bg-slate-800" id="contact">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:py-20">
-          {/* <div className="mb-4">
-            <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-              <p className="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
-                Contact
-              </p>
-              <h2
-                className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
-                Get in Touch
-              </h2>
-              <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">In hac habitasse platea
-                dictumst
-              </p>
-            </div>
-          </div> */}
-          <div className="flex items-stretch justify-center">
-            <div className="grid md:grid-cols-2">
-              <div className="h-fit pt-9 pr-6">
-                <h3 className="mt-3 mb-12 text-lg font-medium leading-6 text-gray-900 dark:text-slate-400">
-                  Reachout to our spectacular team of customer service.
-                </h3>
-                <ul className="mb-6 md:mb-0">
-                  <li className="flex">
-                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-                        strokeLinejoin="round" className="h-6 w-6">
-                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                        <path
-                          d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
-                        </path>
-                      </svg>
-                    </div>
-                    <div className="ml-4 mb-4">
-                      <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address
-                      </h3>
-                      {/* <p className="text-gray-600 dark:text-slate-400">1230 Maecenas Street Donec Road</p> */}
-                      <p className="text-gray-600 dark:text-slate-400">Suna Road, Kampala (U) </p>
-                      <p className="text-gray-600 dark:text-slate-400">P.O.Box 109692 Kampala GPO </p>
-                    </div>
-                  </li>
-                  <li className="flex">
-                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-                        strokeLinejoin="round" className="h-6 w-6">
-                        <path
-                          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
-                        </path>
-                        <path d="M15 7a2 2 0 0 1 2 2"></path>
-                        <path d="M15 3a6 6 0 0 1 6 6"></path>
-                      </svg>
-                    </div>
-                    <div className="ml-4 mb-4">
-                      <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact
-                      </h3>
-                      <p className="text-gray-600 dark:text-slate-400">Mobile: +256 (775) 644-693</p>
-                      <p className="text-gray-600 dark:text-slate-400">Mobile: +256 (788) 247-204</p>
-                      <p className="text-gray-600 dark:text-slate-400">Mail: info@el-sysce.com</p>
-                    </div>
-                  </li>
-                  <li className="flex">
-                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-                        strokeLinejoin="round" className="h-6 w-6">
-                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                        <path d="M12 7v5l3 3"></path>
-                      </svg>
-                    </div>
-                    <div className="ml-4 mb-4">
-                      <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Working
-                        hours</h3>
-                      <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
-                      <p className="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div className="card h-fit max-w-6xl p-5 md:p-12 sm:p-12" id="form">
-                <h2 className="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
-                <form id="contactForm">
-                  <div className="mb-6">
-                    <div className="mx-0 mb-1 sm:mb-4">
-                      <div className="mx-0 mb-1 sm:mb-4">
-                        <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label>
-                        <input type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border py-2 pl-2 hover:border-blue-400 pr-4 shadow-md sm:mb-0" name="name" />
-                      </div>
-                      <div className="mx-0 mb-1 sm:mb-4">
-                        <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label>
-                        <input type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border hover:border-blue-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
-                      </div>
-                    </div>
-                    <div className="mx-0 mb-1 sm:mb-4">
-                      <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border hover:border-blue-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </Layout>
+    </Layout >
 
   )
 }

@@ -3,7 +3,9 @@ import Layout from './Layout'
 
 const NoPage = () => {
   return (
-    <Layout>no pge</Layout>
+    <Layout>
+      
+    </Layout>
 
   )
 }
